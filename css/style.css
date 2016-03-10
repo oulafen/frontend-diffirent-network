@@ -1,0 +1,256 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #c8eefb;
+	font-size: 1em;
+	font-family: "Microsoft YaHei", Arial, sans-serif;
+	min-width: 320px;
+}
+a{
+	text-decoration: none;
+}
+a:focus, input:focus, select:focus{
+	outline: none;
+}
+.header{
+	height: 60px;
+	margin: 10px 10px 0px 10px;
+	width: calc(100% - 20px);
+}
+.header .left img{
+	width: 100px;
+}
+.header .right img{
+	width: 50px;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.index-bg{
+	background-color: #a0cbee;
+}
+.box{
+	margin:0 20px;
+}
+.index-box{
+	margin: 0 auto;
+}
+.index-box img{
+	width: 100%;
+}
+.index-box .input-box{
+	width: 60%;
+	background: #ea7b60;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30%;
+}
+.index-box .input-label{
+	width: 120px;
+	margin: 10px 0;
+}
+.index-box .input-line .input{
+	width: 90%;
+	height: 35px;
+	padding: 0 5px;
+	border: 2px solid #fff;
+	border-radius: 11px;
+	color: #fff;
+	background: none;
+	font-size: 1em;
+}
+.index-box .invite{
+	display: none;
+}
+.index-box .invite .input-line .input{
+	width: 43%;
+	margin-left: 3%;
+	float: left;
+}
+.index-box .invite .fetch-code{
+	width: 37%;
+	height: 39px;
+	background: #fdbb4a;
+	line-height: 35px;
+	display: inline-block;
+	padding: 2px 5px;
+	border-radius: 11px;
+	color: #fff;
+	float: right;
+	margin-right: 3%;
+	border: none;
+}
+.index-box .invite .fetch-code[disabled]{
+	cursor: not-allowed;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: .65;
+}
+.index-box .submit{
+	width: 90%;
+	height: 35px;
+	background: #fdbb4a;
+	line-height: 35px;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 20px 0;
+	border-radius: 11px;
+	color: #fff;
+}
+.phone-box{
+	/*background: url('../images/index-box-bg-2.png');
+	background-size: cover;*/
+	/*padding-bottom: 77px;*/
+	margin-top: -8px;
+	text-align: center;
+}
+
+
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	margin: 0 auto;
+}
+.footer-box{
+	position: fixed;
+	bottom: 5px;
+	width: calc(100% - 10px);
+	left: 5px;
+}
+.footer-box img.left{
+	width: 60px;
+}
+.footer-box img.right{
+	width: 66px;
+}
+.index-footer-bg{
+	background: url('../images/footer-bg.png');
+	background-size: cover;
+	height: 77px;
+}
+.activity-footer, .activity-footer .footer-box{
+	position: relative;
+}
+.activity-box img{
+	width: 100%;
+}
+.code-bg{
+	background: #fff;
+	text-align: center;
+	line-height: 1em;
+	font-size: 1.2em;
+	font-weight: bold;
+	position: absolute;
+	margin: -18% 0 0;
+	right: 10%;
+	color: #f13387;
+}
+.search-box{
+	margin: 10px 20px;
+	height: 28px;
+}
+.search-box ul li{
+	width: 42%;
+	float: left;
+	list-style: none;
+}
+.search-box ul li:first-child{
+	width: 25%;
+	margin-right: 3%;
+}
+.search-box ul li:last-child{
+	width: 28%;
+}
+.search-box .search-input{
+	width: 100%;
+	border: #aaa solid 1px;
+	height: 28px;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
+	padding: 5px;
+}
+.search-box .search-submit{
+	display: inline-block;
+	height: 23px;
+	padding-top: 5px;
+	text-align: center;
+	width: 100%;
+	background: #2f8bca;
+	color: #fff;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+.desc{
+	margin:0 20px 20px;
+	font-size: 0.8em;
+	color: #666;
+}
+.desc p:last-child{
+	padding-left: 2em;
+}
+.store-detail-box{
+	margin: 10px;
+}
+.store-detail-box table{
+	text-align: center;
+}
+.store-detail-box .title{
+	background: #2f8bca;
+	color: #fff;
+	font-size: .8em;
+	height: 30px;
+}
+.store-detail-box table {
+	border-width: 1px;
+	border-color: #999;
+	border-collapse: collapse;
+}
+.store-detail-box th, .store-detail-box td{
+	border-width: 1px;
+	border-color: #666;
+	border-collapse: collapse;
+}
+.store-detail-box th{
+	width: 25%;
+}
+.store-detail-box td{
+	background: #fff;
+}
+.alert-box{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.alertInfo{
+	position: fixed;
+	width: 200px;
+	top: 10%;
+	background: #fff;
+	padding: 20px;
+	left: 50%;
+	margin-left: -100px;
+	border: #999 1px solid;
+	border-radius: 5px;
+	z-index: 9;
+}
+.store-detail-box p{
+	width: 4em;
+	text-align: center;
+	margin: auto;
+	word-wrap: break-word;
+}
